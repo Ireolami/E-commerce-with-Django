@@ -1,0 +1,13 @@
+{% extends 'core/base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="product_uplod" >
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+       
+            {{product_form|crispy}}
+        <button type="submit">Submit Your Product</button>
+    </form>
+    
+</div>
+{% endblock %}

@@ -1,0 +1,33 @@
+.clean{
+  border: 1px solid rgb(93, 85, 87);
+  box-shadow: 2px 2px;
+  width: 800px;
+  height: 600px;
+  margin-left: 500px;
+  padding: 20px;
+    /* align-items: center; */
+    /* display: block; */
+    /* justify-content: space-between; */
+}
+
+.ggg{
+  display: block;
+  /* width: 40px; */
+  justify-content: space-evenly;
+  /* height: 100px; */
+  
+}
+.aa{
+  display: none;
+  width: 50px;
+  padding: 10px;
+  margin-left: 10px;
+  height: 100px;
+
+}
+.ggg:focus-within .aa{
+  display: block;
+}
+.bb{
+  padding:10px
+}

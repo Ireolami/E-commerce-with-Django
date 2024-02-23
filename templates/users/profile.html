@@ -1,0 +1,21 @@
+{% extends "core/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="content-section flex all">
+  <div class="container d-flex">
+    <img class="rounded-circle account-img sty" src="{{ user.profile.image.url }}">
+    <div class="media-body">
+      <h2 class="account-heading">{{user.username}}</h2>
+  
+      <h3 class="text-dark">{{user.first_name}} <span class="text-dark">
+        {{user.last_name}}
+      </span></h3>
+      <h4 class="text-dark">{{user.email}}</h4>
+      <small>{{user.profile.address}}</small>
+    </div>
+  </div>
+  <a href="{% url 'profile_update' %}" class="text-danger">Update Your Profile</a>
+  
+</div>
+<a href="{% url 'index' %}" class="text-danger">Continue Shopping</a>
+{% endblock %}

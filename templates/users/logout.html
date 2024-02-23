@@ -1,0 +1,12 @@
+{% extends "core/base.html" %}
+
+{% load crispy_forms_tags %}
+{% block content %}
+    <h2>You have logout successfully</h2>
+        <div class="border-top pt-3 ml-5">
+            <small class="text-muted">
+            Do you want to login? <a class="ml-2" href="{% url 'login' %}">Login in Here</a>
+            </small>
+        </div>
+   
+{% endblock content %}

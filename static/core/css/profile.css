@@ -1,0 +1,12 @@
+.all{
+    width: 500px;
+    height: fit-content;
+    border: 2px solid #cc6e6e;
+    padding: 20px;
+    margin-left: 400px;
+}
+
+.media{
+  display: flex;
+  justify-content: space-evenly;
+}
